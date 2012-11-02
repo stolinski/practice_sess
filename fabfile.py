@@ -1,7 +1,7 @@
 from fabric.api import local
 
-def prepare_deployment(branch_name):
-    local('python manage.py test pracitce')
+def prepare_deployment(dev):
+    local('python manage.py test practice_tracking')
     local('git add -p && git commit') # or local('hg add && hg commit')
 
 from fabric.api import lcd, local
